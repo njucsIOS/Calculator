@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188D08D21C4B8F03003B162E /* MyStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D08D11C4B8F03003B162E /* MyStack.m */; };
 		7CC855741C15649500B0EEC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC855731C15649500B0EEC0 /* main.m */; };
 		7CC855771C15649500B0EEC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC855761C15649500B0EEC0 /* AppDelegate.m */; };
 		7CC8557A1C15649500B0EEC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC855791C15649500B0EEC0 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		188D08D01C4B8F03003B162E /* MyStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStack.h; sourceTree = "<group>"; };
+		188D08D11C4B8F03003B162E /* MyStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStack.m; sourceTree = "<group>"; };
 		7CC8556E1C15649500B0EEC0 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC855721C15649500B0EEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CC855731C15649500B0EEC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 				7CC8557E1C15649500B0EEC0 /* Images.xcassets */,
 				7CC855801C15649500B0EEC0 /* LaunchScreen.xib */,
 				7CC855711C15649500B0EEC0 /* Supporting Files */,
+				188D08D01C4B8F03003B162E /* MyStack.h */,
+				188D08D11C4B8F03003B162E /* MyStack.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188D08D21C4B8F03003B162E /* MyStack.m in Sources */,
 				7CC8557A1C15649500B0EEC0 /* ViewController.m in Sources */,
 				7CC855771C15649500B0EEC0 /* AppDelegate.m in Sources */,
 				7CC855741C15649500B0EEC0 /* main.m in Sources */,
@@ -418,6 +424,7 @@
 				7CC855931C15649500B0EEC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CC855941C15649500B0EEC0 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				7CC855961C15649500B0EEC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
