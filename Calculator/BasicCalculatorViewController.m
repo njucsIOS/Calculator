@@ -58,7 +58,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-<<<<<<< Updated upstream
 /*
 #pragma mark - Navigation
 
@@ -75,12 +74,7 @@
     NSRange childRange = [operatorStr_ rangeOfString:topStr];
     
     bool isOperator = (childRange.location != NSNotFound);
-=======
--(BOOL)isStackTopOperator:(MyStack *)stack{
-    NSString *topStr=[NSString stringWithString:[stack peek]];
-    NSRange childRange= [operatorStr_ rangeOfString:topStr];
-    bool isOperator=(childRange.location!=NSNotFound);
->>>>>>> Stashed changes
+
     return isOperator;
 }
 
@@ -192,16 +186,12 @@
         }
     }
     else if([btnText isEqualToString:@"/"]){
-<<<<<<< Updated upstream
+
         if (inputString_.length != 0 || inputStack_.count == 1) {
             [self pushOperator:btnText];
             
         }
         
-        
-=======
-        [self pushOperator:btnText];
->>>>>>> Stashed changes
     }
     else if ([btnText isEqualToString:@"="]){
         
