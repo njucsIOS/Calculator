@@ -11,9 +11,10 @@
 
 @interface BasicCalculatorViewController : UIViewController<UITextFieldDelegate>
 {
-    NSMutableString *inputString_;
+    NSMutableString *inputString_;//输入的数字
     NSString  *operatorStr_;
-    NSMutableString *expression_;
+    NSMutableString *expression_;//输入的表达式
+    
 }
 
 @property (weak, nonatomic) IBOutlet UIButton *caculateBtn;

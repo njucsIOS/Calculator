@@ -13,7 +13,7 @@
 @synthesize count = count_;
 @synthesize allElementString = allElementString_;
 
--(id)init{
+-(id)init {
     if (self = [super init]) {
         count_ = 0;
         array_ = [[NSMutableArray alloc]initWithCapacity:30];
@@ -29,7 +29,7 @@
     count_ = array_.count;
 }
 
--(NSString *)pop{
+-(NSString *)pop {
     NSString *popItem = @"";
     if (array_.count > 0) {
         popItem = [array_ lastObject];
@@ -45,6 +45,7 @@
             [allElementString_ deleteCharactersInRange:NSMakeRange(0, allElementString_.length)];
         }
     }
+   // else return @"0";
     return popItem;
 }
 
@@ -60,6 +61,18 @@
 
 -(NSString*)peek{
     return [array_ lastObject];
+}
+
+-(NSMutableString *)getExpression {
+    NSMutableString *expression = [[NSMutableString alloc]initWithCapacity:30];
+    if (!([[array_ firstObject] isEqualToString:@"0"] && [[array_ objectAtIndex:1] isEqualToString:@"-"])) {
+        [expression appendString:[array_ firstObject]];
+    }
+    
+    for (int i = 1; i < array_.count; i++) {
+        [expression appendString:[array_ objectAtIndex:i]];
+    }
+    return expression;
 }
 
 @end

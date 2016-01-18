@@ -16,18 +16,21 @@
 
 @synthesize inputLabel;
 @synthesize finalExpressionLabel;
+
 @synthesize caculateBtn;
-@synthesize substractionBtn;
-@synthesize additionBtn;
-@synthesize deleteBtn;
-@synthesize divisionBtn;
 @synthesize clearBtn;
+@synthesize deleteBtn;
+
+@synthesize additionBtn;
+@synthesize substractionBtn;
 @synthesize mutiplicationBtn;
+@synthesize divisionBtn;
+
 @synthesize dotBtn;
 @synthesize ZeroBtn;
-@synthesize threeBtn;
-@synthesize twoBtn;
 @synthesize oneBtn;
+@synthesize twoBtn;
+@synthesize threeBtn;
 @synthesize fourBtn;
 @synthesize fiveBtn;
 @synthesize sixBtn;
@@ -42,12 +45,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    operatorStr_=@"+-*/";
-    expression_=[NSMutableString stringWithCapacity:30];
-    inputString_=[NSMutableString stringWithCapacity:30];
-    inputStack_=[[MyStack alloc]init];
-    numbersStack_=[[MyStack alloc]init];
-    operatorStack_=[[MyStack alloc]init];
+    operatorStr_ = @"+-*/";
+    expression_ = [NSMutableString stringWithCapacity:30];
+    inputString_ = [NSMutableString stringWithCapacity:30];
+    inputStack_ = [[MyStack alloc]init];
+    numbersStack_ = [[MyStack alloc]init];
+    operatorStack_ = [[MyStack alloc]init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,19 +68,22 @@
 }
 */
 
--(BOOL)isStackTopOperator:(MyStack *)stack{
-    NSString *topStr=[NSString stringWithString:[stack peek]];
-    NSRange childRange= [operatorStr_ rangeOfString:topStr];
-    bool isOperator=(childRange.location!=NSNotFound);
+-(BOOL)isStackTopOperator:(MyStack *)stack
+{
+    NSString *topStr = [NSString stringWithString:[stack peek]];
+    NSRange childRange = [operatorStr_ rangeOfString:topStr];
+    
+    bool isOperator = (childRange.location != NSNotFound);
     return isOperator;
 }
 
 - (void)pushOperator:(NSString *)btnText//入栈－－－－操作符
 {
-    
+    //如果已经输入了数字，先将数字压入栈中
     if (inputString_.length>0) {
         [inputStack_ push:inputString_];
     }
+    
     if (inputStack_.count>0) {
         bool isOperator=[self isStackTopOperator:inputStack_];
         if (isOperator) {
@@ -88,7 +94,8 @@
     [inputStack_ push:btnText];
 }
 
--(BOOL)canCaculate:(NSString *)currentOperator compareWith:(NSString *)stackTopOperator{
+-(BOOL)canCaculate:(NSString *)currentOperator compareWith:(NSString *)stackTopOperator
+{
     if ([currentOperator isEqualToString:@"*"]) {
         if ([stackTopOperator isEqualToString:@"/"]) {
             return NO;
@@ -144,11 +151,8 @@
     else if ([caculateOperator isEqualToString:@"/"]) {
         resultNumber=number1/number2;
     }
-    if (resultNumber!=0) {
-        NSString *resultStr=[NSString stringWithFormat:@"%.3f",resultNumber];
-        
-        [numbersStack_ push:resultStr];
-    }
+    NSString *resultStr = [NSString stringWithFormat:@"%.3f",resultNumber];
+    [numbersStack_ push:resultStr];
 }
 
 //点击计算器按键
@@ -161,16 +165,33 @@
     
     
     if([btnText isEqualToString:@"+"]){
-        [self pushOperator:btnText];
+        if (inputString_.length != 0 || inputStack_.count == 1) {
+            [self pushOperator:btnText];
+            
+        }
     }
     else if([btnText isEqualToString:@"-"]){
+      //  if (numbersStack_.count == 0) {
+           // NSString *resultStr = [NSString stringWithFormat:@"%.3f",@"0"];
+            //[numbersStack_ push:resultStr];
+        //    [numbersStack_ push:@"0"];
+        //}
+        if (inputString_.length == 0 && inputStack_.count == 0) {
+            [inputStack_ push:@"0"];
+        }
         [self pushOperator:btnText];
     }
     else if([btnText isEqualToString:@"*"]){
-        [self pushOperator:btnText];
+        if (inputString_.length != 0 || inputStack_.count == 1) {
+            [self pushOperator:btnText];
+    
+        }
     }
     else if([btnText isEqualToString:@"/"]){
-        [self pushOperator:btnText];
+        if (inputString_.length != 0 || inputStack_.count == 1) {
+            [self pushOperator:btnText];
+            
+        }
         
         
     }
@@ -184,17 +205,17 @@
                     [inputStack_ push:inputString_];
                     [inputString_ deleteCharactersInRange:NSMakeRange(0, inputString_.length)];
                     
-                    [finalExpressionLabel setText:inputStack_.allElementString];
+                    [finalExpressionLabel setText:[inputStack_ getExpression]];
                     //start caculate
                     
                     //pop inputStack_
-                    while (inputStack_.count>0) {
+                    while (inputStack_.count > 0) {
                         
-                        if (operatorStack_.count>0&&numbersStack_.count>1) {
-                            NSString *popStr=[inputStack_ peek];
-                            bool istopOperator=[self isStackTopOperator:inputStack_];
+                        if (operatorStack_.count > 0 && numbersStack_.count > 1) {
+                            NSString *popStr = [inputStack_ peek];
+                            bool istopOperator = [self isStackTopOperator:inputStack_];
                             if (istopOperator) {
-                                bool caculateable=[self canCaculate:[operatorStack_ peek] compareWith:popStr];
+                                bool caculateable = [self canCaculate:[operatorStack_ peek] compareWith:popStr];
                                 if (caculateable) {
                                     [self CaculateNumber];
                                 }
@@ -207,27 +228,26 @@
                                 NSString *popStr= [inputStack_ pop];
                                 [numbersStack_ push:popStr];
                                 //inputStack used up
-                                if (inputStack_.count==0) {
+                                if (inputStack_.count == 0) {
                                     while (numbersStack_.count>1) {
                                         [self CaculateNumber];
                                     }
                                 }
                             }
-                            
                         }
                         else{
                             bool istopOperator=[self isStackTopOperator:inputStack_];
                             if (istopOperator) {
-                                NSString *popStr= [inputStack_ pop];
+                                NSString *popStr = [inputStack_ pop];
                                 [operatorStack_ push:popStr];
                             }
                             else{
-                                NSString *popStr= [inputStack_ pop];
+                                NSString *popStr = [inputStack_ pop];
                                 [numbersStack_ push:popStr];
                             }
                             //inputStack used up
-                            if (inputStack_.count==0) {
-                                while (numbersStack_.count>1) {
+                            if (inputStack_.count == 0) {
+                                while (numbersStack_.count > 1) {
                                     [self CaculateNumber];
                                 }
                             }
@@ -237,7 +257,8 @@
                 }
             }
         }
-        
+        int a = 1+1;
+        a = a+a;
     }
     else if([btnText isEqualToString:@"C"]){
         [inputStack_ clear];
@@ -250,50 +271,69 @@
             NSRange deleteRange=NSMakeRange(inputString_.length-1, 1);
             [inputString_ deleteCharactersInRange:deleteRange];
         }
-        else {
-            if (inputStack_.count>0) {
-                [inputString_ appendString:[inputStack_ pop]];
-                if (inputString_.length>0) {
-                    NSRange deleteRange=NSMakeRange(inputString_.length-1, 1);
-                    [inputString_ deleteCharactersInRange:deleteRange];
-                }
-                
+//        else {
+//            if (inputStack_.count>0) {
+//                [inputString_ appendString:[inputStack_ pop]];
+//                if (inputString_.length>0) {
+//                    NSRange deleteRange=NSMakeRange(inputString_.length-1, 1);
+//                    [inputString_ deleteCharactersInRange:deleteRange];
+//                }
+//                
+//            }
+//        }
+    }
+    else if([btnText isEqualToString:@"."]) {
+        if (inputStack_.count>0) {
+            if (![self isStackTopOperator:inputStack_] && inputString_.length==0) {
+                [inputStack_ clear];
             }
         }
-    }
-    else if([btnText isEqualToString:@"."]){
-        if (inputString_.length>0) {
-            NSRange childRange= [inputString_ rangeOfString:btnText];
-            if (childRange.location==NSNotFound) {
-                [inputString_ appendString:btnText];
-            }
+        
+        if (inputString_.length == 0) {
+            [inputString_ appendString:@"0"];
+        }
+        NSRange childRange= [inputString_ rangeOfString:btnText];
+        if (childRange.location==NSNotFound) {
+            [inputString_ appendString:btnText];
         }
         
     }
     else if([btnText isEqualToString:@"0"]){
-        
-        if (inputString_.length>0) {
+        if (inputStack_.count>0) {
+            if (![self isStackTopOperator:inputStack_] && inputString_.length==0) {
+                [inputStack_ clear];
+            }
+        }
+        if (inputString_.length == 0 || ![inputString_ isEqualToString:@"0"]) {
             [inputString_ appendString:btnText];
         }
     }
-    else{
+    else {
         if (inputStack_.count>0) {
-            if (![self isStackTopOperator:inputStack_]&&inputString_.length==0) {
+            if (![self isStackTopOperator:inputStack_] && inputString_.length==0) {
                 [inputStack_ clear];
             }
         }
         [inputString_ appendString:btnText];
     }
+    
+    
     if (expression_.length>0) {
         NSRange expressionRange=NSMakeRange(0, expression_.length);
         [expression_ deleteCharactersInRange:expressionRange];
     }
-    if (numbersStack_.count==1&&inputStack_.count==0&&operatorStack_.count==0) {
-        [inputStack_ push:[numbersStack_  pop]];
+    
+    //一次计算之后－－结果弹出，进入输入栈
+    if (numbersStack_.count==1 && inputStack_.count==0 && operatorStack_.count==0) {
+        [inputStack_ push:[numbersStack_ pop]];
     }
+    
+    //表达式改变
     if (inputStack_.count>0) {
-        [expression_ appendString:inputStack_.allElementString];
+        [expression_ appendString:[inputStack_ getExpression]];
     }
+    
+    
     if (inputString_.length>0) {
         [expression_ appendString:inputString_];
     }

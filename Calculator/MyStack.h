@@ -24,4 +24,6 @@
 -(BOOL)contains:(id)anObject;
 -(id)peek;
 
+-(NSMutableString *)getExpression;
+
 @end
