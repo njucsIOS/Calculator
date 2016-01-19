@@ -46,25 +46,27 @@
     [actionSheet showInView:self.view];
 }
 
+- (IBAction)LengthToSelect:(id)sender {
+}
+
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex == 0) {
-        [_LengthFromLabel setText:@"m"];
+        [_FromUnit setText:@"m"];
     }else if (buttonIndex == 1) {
-        [_LengthFromLabel setText:@"dm"];
+        [_FromUnit setText:@"dm"];
     }else if(buttonIndex == 2) {
-        [_LengthFromLabel setText:@"cm"];
+        [_FromUnit setText:@"cm"];
     }else if(buttonIndex == 3) {
-        [_LengthFromLabel setText:@"mm"];    }
+        [_FromUnit setText:@"mm"];    }
 }
-
 
 - (IBAction)OnBtnClick:(id)sender {
     UIButton *clickedBtn=(UIButton *)sender;
     NSString *btnText=clickedBtn.titleLabel.text;
     [inputString_ appendString:btnText];
     float floatString = [inputString_ floatValue];
-    printf("%.3f ",floatString);
+    //printf("%.3f ",floatString);
     NSString *stringFloat = [NSString stringWithFormat:@"%.3f",floatString];
     [_LengthFromLabel setText:stringFloat];
     

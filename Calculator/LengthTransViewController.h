@@ -13,7 +13,9 @@
 }
 
 - (IBAction)LengthFromSelect:(id)sender;
+- (IBAction)LengthToSelect:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UILabel *LengthToLabel;
 @property (weak, nonatomic) IBOutlet UILabel *LengthFromLabel;
 @property (weak, nonatomic) IBOutlet UIButton *Zero;
 @property (weak, nonatomic) IBOutlet UIButton *One;
@@ -29,6 +31,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *Clear;
 @property (weak, nonatomic) IBOutlet UIButton *Equal;
 @property (weak, nonatomic) IBOutlet UIButton *Delete;
+@property (weak, nonatomic) IBOutlet UILabel *FromUnit;
+@property (weak, nonatomic) IBOutlet UILabel *ToUnit;
 - (IBAction)OnBtnClick:(id)sender;
 
 @end
