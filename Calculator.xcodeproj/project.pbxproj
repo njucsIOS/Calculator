@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1817799A1C4D04C900A4326C /* LengthTransViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181779991C4D04C900A4326C /* LengthTransViewController.m */; };
+		182FDB881C4E3FB400E23D7A /* ProgrammerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182FDB871C4E3FB400E23D7A /* ProgrammerViewController.m */; };
 		188D08D21C4B8F03003B162E /* MyStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D08D11C4B8F03003B162E /* MyStack.m */; };
 		18DD547D1C4CDD800016819A /* BasicCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DD547C1C4CDD800016819A /* BasicCalculatorViewController.m */; };
 		7CC855741C15649500B0EEC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC855731C15649500B0EEC0 /* main.m */; };
@@ -32,6 +33,8 @@
 /* Begin PBXFileReference section */
 		181779981C4D04C900A4326C /* LengthTransViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LengthTransViewController.h; sourceTree = "<group>"; };
 		181779991C4D04C900A4326C /* LengthTransViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LengthTransViewController.m; sourceTree = "<group>"; };
+		182FDB861C4E3FB400E23D7A /* ProgrammerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgrammerViewController.h; sourceTree = "<group>"; };
+		182FDB871C4E3FB400E23D7A /* ProgrammerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgrammerViewController.m; sourceTree = "<group>"; };
 		188D08D01C4B8F03003B162E /* MyStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStack.h; sourceTree = "<group>"; };
 		188D08D11C4B8F03003B162E /* MyStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStack.m; sourceTree = "<group>"; };
 		18DD547B1C4CDD800016819A /* BasicCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicCalculatorViewController.h; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				18DD547C1C4CDD800016819A /* BasicCalculatorViewController.m */,
 				181779981C4D04C900A4326C /* LengthTransViewController.h */,
 				181779991C4D04C900A4326C /* LengthTransViewController.m */,
+				182FDB861C4E3FB400E23D7A /* ProgrammerViewController.h */,
+				182FDB871C4E3FB400E23D7A /* ProgrammerViewController.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182FDB881C4E3FB400E23D7A /* ProgrammerViewController.m in Sources */,
 				188D08D21C4B8F03003B162E /* MyStack.m in Sources */,
 				1817799A1C4D04C900A4326C /* LengthTransViewController.m in Sources */,
 				18DD547D1C4CDD800016819A /* BasicCalculatorViewController.m in Sources */,
