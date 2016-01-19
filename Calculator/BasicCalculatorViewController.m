@@ -255,8 +255,6 @@
                 }
             }
         }
-        int a = 1+1;
-        a = a+a;
     }
     else if([btnText isEqualToString:@"C"]){
         [inputStack_ clear];

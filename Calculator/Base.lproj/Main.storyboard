@@ -985,10 +985,10 @@
             </objects>
             <point key="canvasLocation" x="-139" y="534"/>
         </scene>
-        <!--Length Trans View Controller-->
+        <!--Unit Trans View Controller-->
         <scene sceneID="3nd-lh-EO7">
             <objects>
-                <viewController id="K1k-4d-ytn" customClass="LengthTransViewController" sceneMemberID="viewController">
+                <viewController id="K1k-4d-ytn" customClass="UnitTransViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UJn-nd-nes"/>
                         <viewControllerLayoutGuide type="bottom" id="eoL-OH-U3t"/>
@@ -997,21 +997,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QG1-GG-Dk6">
-                                <rect key="frame" x="239" y="252" width="77" height="77"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="77" id="5bl-6P-Mnh"/>
-                                    <constraint firstAttribute="width" secondItem="QG1-GG-Dk6" secondAttribute="height" multiplier="1:1" id="CsX-yg-572"/>
-                                    <constraint firstAttribute="height" constant="77" id="bDY-Ui-iYu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="C">
-                                    <color key="titleColor" red="0.96470588239999999" green="0.53641275030000002" blue="0.48386779990000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru7-V2-dMJ">
                                 <rect key="frame" x="239" y="408" width="77" height="155"/>
                                 <animations/>
@@ -1188,6 +1173,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnBtnClick:" destination="K1k-4d-ytn" eventType="touchUpInside" id="5PV-GT-eLs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lo9-s9-iTP">
                                 <rect key="frame" x="161" y="486" width="77" height="77"/>
@@ -1221,6 +1209,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnBtnClick:" destination="K1k-4d-ytn" eventType="touchUpInside" id="0fH-hw-i2l"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad1-J9-RcL">
                                 <rect key="frame" x="0.0" y="91" width="320" height="48"/>
@@ -1307,7 +1298,7 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.50588235290000005" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yK5-qk-dNP">
@@ -1318,7 +1309,7 @@
                                     <constraint firstAttribute="width" secondItem="yK5-qk-dNP" secondAttribute="height" multiplier="53:14" id="HKM-n9-WiT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHz-PE-7ci">
@@ -1326,7 +1317,7 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.73171557210000004" green="0.80971102979999998" blue="0.90289594240000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7L-II-x5m" userLabel="FROM">
@@ -1339,6 +1330,24 @@
                                 </state>
                                 <connections>
                                     <action selector="LengthFromSelect:" destination="K1k-4d-ytn" eventType="touchUpInside" id="Ut7-y3-S8f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QG1-GG-Dk6">
+                                <rect key="frame" x="239" y="252" width="77" height="77"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="5bl-6P-Mnh"/>
+                                    <constraint firstAttribute="width" secondItem="QG1-GG-Dk6" secondAttribute="height" multiplier="1:1" id="CsX-yg-572"/>
+                                    <constraint firstAttribute="height" constant="77" id="bDY-Ui-iYu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.53641275030000002" blue="0.48386779990000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OnBtnClick:" destination="K1k-4d-ytn" eventType="touchUpInside" id="1vj-On-s7z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1439,7 +1448,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Clear" destination="QG1-GG-Dk6" id="uST-3O-1sm"/>
+                        <outlet property="Clear" destination="QG1-GG-Dk6" id="TeB-oN-5F0"/>
                         <outlet property="Delete" destination="CwE-Tq-4FO" id="zT5-zp-Lrd"/>
                         <outlet property="Dot" destination="lo9-s9-iTP" id="nrG-V1-yub"/>
                         <outlet property="Eight" destination="NkJ-7h-UOM" id="bXg-c5-6sm"/>
@@ -1451,7 +1460,7 @@
                         <outlet property="LengthToLabel" destination="Fok-4V-tjS" id="c9F-mw-InR"/>
                         <outlet property="Nine" destination="b96-F1-RQe" id="hnH-a1-ch0"/>
                         <outlet property="One" destination="IDW-UE-JYC" id="f7y-eQ-OeR"/>
-                        <outlet property="Seven" destination="62H-bK-Ct7" id="JSk-zw-g0H"/>
+                        <outlet property="Seven" destination="62H-bK-Ct7" id="Buy-Nr-fSc"/>
                         <outlet property="Six" destination="b5t-Yw-mzA" id="XCy-yZ-t6e"/>
                         <outlet property="Three" destination="PWk-DJ-8Ri" id="pFq-73-n5j"/>
                         <outlet property="ToUnit" destination="pHz-PE-7ci" id="Arz-Op-FxN"/>
