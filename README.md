@@ -1,4 +1,7 @@
 # Calculator
-* 目前状态：Empty Project<br>
+### 目前完成状态：约75% <br>
+* 简单计算器 <br>
+* 单位转换//部分单位 <br>
+* 进制转换
 <br>
 
