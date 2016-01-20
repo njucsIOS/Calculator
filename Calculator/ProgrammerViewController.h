@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ProgrammerViewController : UIViewController<UITextFieldDelegate>{
-    Boolean FromOrTo;
+    BOOL chooseFrom;
+    NSMutableString *inputString_;
 }
 @property (weak, nonatomic) IBOutlet UIButton *Seven;
 @property (weak, nonatomic) IBOutlet UIButton *Eight;
@@ -37,5 +38,13 @@
 
 - (IBAction)ProFrom:(id)sender;
 - (IBAction)ProTo:(id)sender;
+
+- (int)BinToDec:(NSString *)binNum;
+- (int)OctToDec:(NSString *)octNum;
+- (int)HexToDec:(NSString *)hexNum;
+
+- (NSString *)DecToBin:(int)num;
+- (NSString *)DecToOct:(int)num;
+- (NSString *)DecToHex:(int)num;
 
 @end
