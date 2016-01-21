@@ -10,7 +10,7 @@
     * 为简化app的代码，仅实现部分国家（常用）货币的转换 <br>
 
 ### 效果展示
-![](show.gif)
+![](https://github.com/Wayne1234/show/blob/master/show%20(2).gif)
 
 
 <br>
