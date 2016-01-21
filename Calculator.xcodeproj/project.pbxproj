@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		182FDB881C4E3FB400E23D7A /* ProgrammerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182FDB871C4E3FB400E23D7A /* ProgrammerViewController.m */; };
 		187174831C50FF8C00BA6D59 /* RateExchangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187174821C50FF8C00BA6D59 /* RateExchangeViewController.m */; };
-		187174851C51053400BA6D59 /* calculator.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 187174841C51053400BA6D59 /* calculator.jpg */; };
 		1871748A1C5108E000BA6D59 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187174891C5108E000BA6D59 /* Images-2.xcassets */; };
 		1878A0011C4E635E009675FC /* UnitTransViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878A0001C4E635E009675FC /* UnitTransViewController.m */; };
 		188D08D21C4B8F03003B162E /* MyStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D08D11C4B8F03003B162E /* MyStack.m */; };
@@ -37,7 +36,6 @@
 		182FDB871C4E3FB400E23D7A /* ProgrammerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgrammerViewController.m; sourceTree = "<group>"; };
 		187174811C50FF8C00BA6D59 /* RateExchangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateExchangeViewController.h; sourceTree = "<group>"; };
 		187174821C50FF8C00BA6D59 /* RateExchangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateExchangeViewController.m; sourceTree = "<group>"; };
-		187174841C51053400BA6D59 /* calculator.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = calculator.jpg; path = ../../Desktop/calculator.jpg; sourceTree = "<group>"; };
 		187174891C5108E000BA6D59 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		18789FFF1C4E635E009675FC /* UnitTransViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTransViewController.h; sourceTree = "<group>"; };
 		1878A0001C4E635E009675FC /* UnitTransViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTransViewController.m; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 				7CC855701C15649500B0EEC0 /* Calculator */,
 				7CC8558A1C15649500B0EEC0 /* CalculatorTests */,
 				7CC8556F1C15649500B0EEC0 /* Products */,
-				187174841C51053400BA6D59 /* calculator.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,7 +227,6 @@
 				7CC8557D1C15649500B0EEC0 /* Main.storyboard in Resources */,
 				7CC855821C15649500B0EEC0 /* LaunchScreen.xib in Resources */,
 				1871748A1C5108E000BA6D59 /* Images-2.xcassets in Resources */,
-				187174851C51053400BA6D59 /* calculator.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
