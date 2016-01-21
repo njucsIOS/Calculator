@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		182FDB881C4E3FB400E23D7A /* ProgrammerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182FDB871C4E3FB400E23D7A /* ProgrammerViewController.m */; };
 		187174831C50FF8C00BA6D59 /* RateExchangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187174821C50FF8C00BA6D59 /* RateExchangeViewController.m */; };
+		187174851C51053400BA6D59 /* calculator.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 187174841C51053400BA6D59 /* calculator.jpg */; };
+		1871748A1C5108E000BA6D59 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187174891C5108E000BA6D59 /* Images-2.xcassets */; };
 		1878A0011C4E635E009675FC /* UnitTransViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878A0001C4E635E009675FC /* UnitTransViewController.m */; };
 		188D08D21C4B8F03003B162E /* MyStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D08D11C4B8F03003B162E /* MyStack.m */; };
 		18DD547D1C4CDD800016819A /* BasicCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DD547C1C4CDD800016819A /* BasicCalculatorViewController.m */; };
@@ -16,7 +18,6 @@
 		7CC855771C15649500B0EEC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC855761C15649500B0EEC0 /* AppDelegate.m */; };
 		7CC8557A1C15649500B0EEC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC855791C15649500B0EEC0 /* ViewController.m */; };
 		7CC8557D1C15649500B0EEC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8557B1C15649500B0EEC0 /* Main.storyboard */; };
-		7CC8557F1C15649500B0EEC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8557E1C15649500B0EEC0 /* Images.xcassets */; };
 		7CC855821C15649500B0EEC0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC855801C15649500B0EEC0 /* LaunchScreen.xib */; };
 		7CC8558E1C15649500B0EEC0 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8558D1C15649500B0EEC0 /* CalculatorTests.m */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,8 @@
 		182FDB871C4E3FB400E23D7A /* ProgrammerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgrammerViewController.m; sourceTree = "<group>"; };
 		187174811C50FF8C00BA6D59 /* RateExchangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateExchangeViewController.h; sourceTree = "<group>"; };
 		187174821C50FF8C00BA6D59 /* RateExchangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateExchangeViewController.m; sourceTree = "<group>"; };
+		187174841C51053400BA6D59 /* calculator.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = calculator.jpg; path = ../../Desktop/calculator.jpg; sourceTree = "<group>"; };
+		187174891C5108E000BA6D59 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		18789FFF1C4E635E009675FC /* UnitTransViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTransViewController.h; sourceTree = "<group>"; };
 		1878A0001C4E635E009675FC /* UnitTransViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTransViewController.m; sourceTree = "<group>"; };
 		188D08D01C4B8F03003B162E /* MyStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStack.h; sourceTree = "<group>"; };
@@ -50,7 +53,6 @@
 		7CC855781C15649500B0EEC0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7CC855791C15649500B0EEC0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7CC8557C1C15649500B0EEC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7CC8557E1C15649500B0EEC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7CC855811C15649500B0EEC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7CC855871C15649500B0EEC0 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC8558C1C15649500B0EEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				7CC855701C15649500B0EEC0 /* Calculator */,
 				7CC8558A1C15649500B0EEC0 /* CalculatorTests */,
 				7CC8556F1C15649500B0EEC0 /* Products */,
+				187174841C51053400BA6D59 /* calculator.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +104,6 @@
 				7CC855781C15649500B0EEC0 /* ViewController.h */,
 				7CC855791C15649500B0EEC0 /* ViewController.m */,
 				7CC8557B1C15649500B0EEC0 /* Main.storyboard */,
-				7CC8557E1C15649500B0EEC0 /* Images.xcassets */,
 				7CC855801C15649500B0EEC0 /* LaunchScreen.xib */,
 				7CC855711C15649500B0EEC0 /* Supporting Files */,
 				188D08D01C4B8F03003B162E /* MyStack.h */,
@@ -114,6 +116,7 @@
 				1878A0001C4E635E009675FC /* UnitTransViewController.m */,
 				187174811C50FF8C00BA6D59 /* RateExchangeViewController.h */,
 				187174821C50FF8C00BA6D59 /* RateExchangeViewController.m */,
+				187174891C5108E000BA6D59 /* Images-2.xcassets */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -226,7 +229,8 @@
 			files = (
 				7CC8557D1C15649500B0EEC0 /* Main.storyboard in Resources */,
 				7CC855821C15649500B0EEC0 /* LaunchScreen.xib in Resources */,
-				7CC8557F1C15649500B0EEC0 /* Images.xcassets in Resources */,
+				1871748A1C5108E000BA6D59 /* Images-2.xcassets in Resources */,
+				187174851C51053400BA6D59 /* calculator.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -389,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
